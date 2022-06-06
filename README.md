@@ -9,9 +9,7 @@ A VIM plugin is then developed to integrate Nagelfar into VIM. Whenever we save 
 ## 2. How to Update Nagelfar Database?
 In order to run Nagelfar in Terminal, call this command
 
-<code>
-  tclsh path/to/nagelfar/nagelfar.tcl -H \<TCL file\>
-</code>
+<code>tclsh path/to/nagelfar/nagelfar.tcl -H [path-to-TCL-file]</code>
 
 Although Nagelfar is very powerful, it has a major drawbacks. If we use Nagelfar in our specific TCL code base, we would probably receive many warning messages of "W Unknown command". The reason is that the Nagelfar could not recognize our functions or variables as the valid ones.
 
