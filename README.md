@@ -16,7 +16,7 @@ Although Nagelfar is very powerful, it has a major drawbacks. If we use Nagelfar
 To solve this problem, we need to update the Nagelfar database with our function names, following these steps below
 * The database is stored in **\<nagelfar-directory\>/syntaxdb.tcl**
   
-  <img src="https://user-images.githubusercontent.com/4446300/172264397-a35cbe4d-de41-4b0f-b87a-a47d25fdaebb.png" width="438" height="364">
+  <img src="https://user-images.githubusercontent.com/4446300/172264397-a35cbe4d-de41-4b0f-b87a-a47d25fdaebb.png" width="350" height="291">
  
 * List all unknown functions using this command  
   <code><pre>
@@ -42,7 +42,7 @@ To solve this problem, we need to update the Nagelfar database with our function
   
 * The plugin consists of five main parts, as shown below
   
-  <img src="https://user-images.githubusercontent.com/4446300/172266480-0faffa2e-924a-49fd-ba24-b48f6df37de6.png" width="960" height="390">
+  <img src="https://user-images.githubusercontent.com/4446300/172266480-0faffa2e-924a-49fd-ba24-b48f6df37de6.png" width="720" height="292">
   
 * The flow chart is shown below
   
