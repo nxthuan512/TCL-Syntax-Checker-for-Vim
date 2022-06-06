@@ -40,6 +40,29 @@ To solve this problem, we need to update the Nagelfar database with our function
   
 ## 3. How to Integrate Nagelfar into VIM?
   
-* Develop a VIM plugin using vimscript language with the structure below
+* Develop a VIM plugin named **tcl_syntax_checker.vim**. It is written based on Vimscript language.
+  
+* The plugin consists of five main parts, as shown below
   
   <img src="https://user-images.githubusercontent.com/4446300/172266480-0faffa2e-924a-49fd-ba24-b48f6df37de6.png" width="960" height="390">
+  
+* The flow chart is shown below
+  
+  <img src="https://user-images.githubusercontent.com/4446300/172267073-85970c57-21bb-46e8-af9b-88e49a021c2f.png" width="532" height="456">
+
+* To install the plugin, follow these steps
+ 
+  * Open $HOME/.vimrc, add the lines
+  <code><pre>
+  source path/to/tcl_syntax_checker/tcl_syntax_checker.vim
+  let g:tclsc_engine = 'path/to/tcl_syntax_checker/nagelfar132/nagelfar.tcl'
+  let g:tclsc_nlines = 3000  
+  " Example of exceptions. Note: change " to \\\"
+  let g:tclsc_exceptions = [
+                          \ "E Bad expression: can't read \\\"darth_vader_mind\\\": no such variable", 
+                          \ "E Unknown variable \\\"order_66\\\""                        
+                          \]
+  </code></pre>
+
+  * Restart VIM
+  * If the file is large, we need to call the plugin manually <code>:XTclCheckSyntax 1</code>
